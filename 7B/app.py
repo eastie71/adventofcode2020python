@@ -31,5 +31,5 @@ def get_total_bags_inside(selected_bag_color):
             index += 2
     return bag_count_total
 
-print(f"2020 Question 7A: Number of Bags inside a 'Shiny Gold Bag' = {get_total_bags_inside('shiny gold')}")
+print(f"2020 Question 7B: Number of Bags inside a 'Shiny Gold Bag' = {get_total_bags_inside('shiny gold')}")
 #print(bags_counted)
