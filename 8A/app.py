@@ -18,7 +18,7 @@ def get_accumulated_value(instructions):
     instruction_read = [False for i in range(len(instructions))]
     current_pos = 0
     error = False
-    while (not instruction_read[current_pos] or current_pos < 0 or current_pos > len(instructions)):
+    while (not instruction_read[current_pos]):
         instruction_read[current_pos] = True
         current_instruction = instructions[current_pos]
         match current_instruction["operation"]:
