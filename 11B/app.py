@@ -138,11 +138,6 @@ def count_occupied_seats(seat_map):
     seat_count = 0
     for seat_row in seat_map:
         seat_count += seat_row.count("#")
-        """
-        for col_num in range(0, len(seat_row)):
-            if seat_row[col_num] == '#':
-                seat_count += 1
-        """
     return seat_count
 
 def get_total_occupied_seats(seat_map):
@@ -162,7 +157,7 @@ def get_total_occupied_seats(seat_map):
                 seat = current_seat_map[row_num][col_num]
 
                 match seat:
-                    # "." is the floor - just map this over
+                    # "." is the floor - just skip this over
                     case ".":
                         new_seat_map[row_num] += seat
                     case "#":
